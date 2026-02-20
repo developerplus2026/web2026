@@ -11,6 +11,7 @@ import {
 } from "geist/font/pixel";
 import { ThemeProvider } from "@/components/theme-provider";
 import { NavigationMenuBar } from "@/components/navigation_menu_bar";
+import { GoeyToaster } from "@/components/ui/goey-toaster";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -48,6 +49,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <NavigationMenuBar />
+            <GoeyToaster position="top-center" theme="dark" />
             <TooltipProvider>{children}</TooltipProvider>
           </ThemeProvider>
         </body>

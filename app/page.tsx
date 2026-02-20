@@ -1,23 +1,7 @@
-import Image from "next/image";
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
+"use client";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import {
-  ArrowBigDown,
-  ArrowRight,
-  ArrowRightLeft,
-  ChevronRight,
-} from "lucide-react";
+import { ChevronRight } from "lucide-react";
 export default function Home() {
   return (
     <div className="flex h-[calc(100vh-56px)] w-full items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -30,10 +14,10 @@ export default function Home() {
                 Introducing AgentMatic Version 2.0.3 <ChevronRight />
               </Badge>
             </div>
-            <h1 className="font-pixel-grid text-center text-7xl w-240 text-balance">
+            <h1 className=" text-center text-7xl w-240 text-balance">
               The AI Agent for Modern Software Development
             </h1>
-            <p className="font-pixel-grid text-center text-lg w-160 text-balance">
+            <p className="text-[#a1a1a1] text-center text-lg w-160 text-balance">
               A powerful AI-driven assistant designed specifically for
               developers. It helps generate clean code, explain complex logic,
               fix errors, optimize performance, and streamline daily development
