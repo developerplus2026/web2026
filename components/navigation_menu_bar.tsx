@@ -55,18 +55,12 @@ const components: { title: string; href: string; description: string }[] = [
 export function NavigationMenuBar() {
   return (
     <div className="border-b justify-between flex items-center px-12 h-14">
+      <Link href="/" className="font-pixel-circle text-2xl!">
+        AgentMatic
+      </Link>
+
       <NavigationMenu>
         <NavigationMenuList>
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              asChild
-              className={navigationMenuTriggerStyle()}
-            >
-              <Link href="/" className="font-pixel-circle text-2xl!">
-                AgentMatic
-              </Link>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
           <NavigationMenuItem>
             <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
 
@@ -116,7 +110,6 @@ export function NavigationMenuBar() {
               <Link href="/docs">Pricing</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
-          
         </NavigationMenuList>
       </NavigationMenu>
       <div className="flex gap-4 items-center">
