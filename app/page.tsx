@@ -17,7 +17,7 @@ export default function Home() {
             <h1 className=" text-start font-instrucment-sans text-7xl w-240 text-balance">
               The AI Agent for Modern Software Development
             </h1>
-            <p className="text-[#a1a1a1] font-instrucment-sans text-start text-lg w-160 text-balance">
+            <p className="text-[#a1a1a1]  text-start text-lg w-160 text-balance">
               A powerful AI-driven assistant designed specifically for
               developers. It helps generate clean code, explain complex logic,
               fix errors, optimize performance, and streamline daily development
