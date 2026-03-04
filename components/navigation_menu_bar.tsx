@@ -55,7 +55,7 @@ const components: { title: string; href: string; description: string }[] = [
 export function NavigationMenuBar() {
   return (
     <div className="border-b justify-between flex items-center px-12 h-14">
-      <Link href="/" className="font-pixel-circle text-2xl!">
+      <Link href="/" className="font-[instrument-serif] text-2xl!">
         AgentMatic
       </Link>
 
