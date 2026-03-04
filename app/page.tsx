@@ -5,7 +5,7 @@ import { ChevronRight } from "lucide-react";
 export default function Home() {
   return (
     <div className="flex h-[calc(100vh-56px)] w-full items-center pl-24 justify-start bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex h-full  w-full flex-col items-start justify-start py-32 px-16 bg-white dark:bg-black ">
+      <main className="flex h-full  w-full flex-col items-start justify-center py-32 px-16 bg-white dark:bg-black ">
         <div className="flex flex-col items-start gap-8">
           <div className="flex flex-col gap-8 items-start">
             <div>
@@ -14,7 +14,7 @@ export default function Home() {
                 Introducing AgentMatic Version 2.0.3 <ChevronRight />
               </Badge>
             </div>
-            <h1 className=" text-start font-[instrument-serif] text-[6rem] w-240 text-balance">
+            <h1 className=" text-start font-[instrument-serif] leading-24 text-[6rem] w-240 text-balance">
               The AI Agent for Modern Software Development
             </h1>
             <p className="text-[#a1a1a1] font-[instrument-serif]  text-start text-xl w-160 text-balance">
