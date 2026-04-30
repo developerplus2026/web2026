@@ -54,6 +54,7 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <head />
+       
         <body className="">
           <ThemeProvider
             attribute="class"

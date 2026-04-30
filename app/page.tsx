@@ -2,10 +2,11 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ChevronRight } from "lucide-react";
+import { Global } from "@solar-icons/react";
 export default function Home() {
   return (
     <div className="flex h-[calc(100vh-56px)] w-full items-center pl-24 justify-start bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex h-full  w-full flex-col items-start justify-center py-32 px-16 bg-white dark:bg-black ">
+      <main className=" h-full  w-full flex justify-center py-32 px-16 bg-white dark:bg-black ">
         <div className="flex flex-col items-start gap-8">
           <div className="flex flex-col gap-8 items-start">
             <div>
@@ -32,6 +33,9 @@ export default function Home() {
               Contact Sale
             </Button>
           </div>
+        </div>
+        <div>
+          <Global weight={"BoldDuotone"} size={450} color="#ffffff" />
         </div>
       </main>
     </div>
