@@ -13,6 +13,8 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { Button } from "./ui/button";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { CircleArrowRight01Icon } from "@hugeicons/core-free-icons";
 
 const components: { title: string; href: string; description: string }[] = [
   {

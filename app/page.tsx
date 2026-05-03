@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ChevronRight } from "lucide-react";
 import { Global } from "@solar-icons/react";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { Call02Icon, CircleArrowRight01Icon } from "@hugeicons/core-free-icons";
 export default function Home() {
   return (
     <div className="flex h-[calc(100vh-56px)] w-full items-center pl-24 justify-start bg-zinc-50 font-sans dark:bg-black">
@@ -27,10 +29,12 @@ export default function Home() {
           </div>
           <div className="flex gap-4 items-center">
             <Button size={"lg"} variant="outline">
-              Getting Started
+              Getting Started{" "}
+              <HugeiconsIcon size={34} icon={CircleArrowRight01Icon} />
             </Button>
             <Button size={"lg"} variant="outline">
               Contact Sale
+              <HugeiconsIcon icon={Call02Icon} />
             </Button>
           </div>
         </div>
