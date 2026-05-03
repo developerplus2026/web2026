@@ -54,71 +54,76 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuBar() {
   return (
-    <div className="border-b justify-between flex items-center px-12 h-14">
-      <Link href="/" className="font-[instrument-serif] text-2xl!">
-        AgentMatic
-      </Link>
+    <div className="fixed w-full top-8 px-16">
+      <div className="border border-input rounded-3xl justify-between flex   items-center px-12 h-14">
+        <Link href="/" className="font-[instrument-serif] text-2xl!">
+          AgentMatic
+        </Link>
 
-      <NavigationMenu>
-        <NavigationMenuList>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+        <NavigationMenu>
+          <NavigationMenuList>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
 
-            <NavigationMenuContent>
-              <ul className="w-96">
-                <ListItem href="/docs" title="Introduction">
-                  Re-usable components built with Tailwind CSS.
-                </ListItem>
-                <ListItem href="/docs/installation" title="Installation">
-                  How to install dependencies and structure your app.
-                </ListItem>
-                <ListItem href="/docs/primitives/typography" title="Typography">
-                  Styles for headings, paragraphs, lists...etc
-                </ListItem>
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-          <NavigationMenuItem className="hidden md:flex">
-            <NavigationMenuTrigger>Components</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid w-100 gap-2 md:w-125 md:grid-cols-2 lg:w-150">
-                {components.map((component) => (
-                  <ListItem
-                    key={component.title}
-                    title={component.title}
-                    href={component.href}
-                  >
-                    {component.description}
+              <NavigationMenuContent>
+                <ul className="w-96">
+                  <ListItem href="/docs" title="Introduction">
+                    Re-usable components built with Tailwind CSS.
                   </ListItem>
-                ))}
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              asChild
-              className={navigationMenuTriggerStyle()}
-            >
-              <Link href="/docs">Docs</Link>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              asChild
-              className={navigationMenuTriggerStyle()}
-            >
-              <Link href="/docs">Pricing</Link>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-        </NavigationMenuList>
-      </NavigationMenu>
-      <div className="flex gap-4 items-center">
-        <Button size={"sm"} variant="outline">
-          Sign Up
-        </Button>
-        <Button size={"sm"} variant="outline">
-          Contact Sale
-        </Button>
+                  <ListItem href="/docs/installation" title="Installation">
+                    How to install dependencies and structure your app.
+                  </ListItem>
+                  <ListItem
+                    href="/docs/primitives/typography"
+                    title="Typography"
+                  >
+                    Styles for headings, paragraphs, lists...etc
+                  </ListItem>
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem className="hidden md:flex">
+              <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid w-100 gap-2 md:w-125 md:grid-cols-2 lg:w-150">
+                  {components.map((component) => (
+                    <ListItem
+                      key={component.title}
+                      title={component.title}
+                      href={component.href}
+                    >
+                      {component.description}
+                    </ListItem>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink
+                asChild
+                className={navigationMenuTriggerStyle()}
+              >
+                <Link href="/docs">Docs</Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink
+                asChild
+                className={navigationMenuTriggerStyle()}
+              >
+                <Link href="/docs">Pricing</Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
+        <div className="flex gap-4 items-center">
+          <Button size={"sm"} variant="outline">
+            Sign Up
+          </Button>
+          <Button size={"sm"} variant="outline">
+            Contact Sale
+          </Button>
+        </div>
       </div>
     </div>
   );

@@ -34,9 +34,6 @@ export default function Home() {
             </Button>
           </div>
         </div>
-        <div>
-          <Global weight={"BoldDuotone"} size={450} color="#ffffff" />
-        </div>
       </main>
     </div>
   );
