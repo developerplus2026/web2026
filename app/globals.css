@@ -132,14 +132,17 @@
     @apply bg-background text-foreground;
   }
 }
-.instrument-serif-regular {
-  font-family: "Instrument Serif", serif;
+
+.instrument-serif-regular{
+  font-family: "Instrument Serif";
+  src: url("/fonts/InstrumentSerif-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
-.instrument-serif-regular-italic {
-  font-family: "Instrument Serif", serif;
+.instrument-serif-regular-italic  {
+  font-family: "Instrument Serif";
+  src: url("/fonts/InstrumentSerif-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
 }
