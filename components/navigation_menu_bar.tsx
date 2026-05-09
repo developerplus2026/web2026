@@ -15,6 +15,7 @@ import {
 import { Button } from "./ui/button";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { CircleArrowRight01Icon } from "@hugeicons/core-free-icons";
+import Image from "next/image";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -58,7 +59,10 @@ export function NavigationMenuBar() {
   return (
     <div className="fixed w-full top-8 px-16">
       <div className="border border-input rounded-3xl justify-between flex   items-center px-12 h-14">
-        <Link href="/" className="font-[instrument-serif] text-2xl!">
+        <Link href="/" className="instrument-serif-regular gap-3 flex items-center text-2xl!">
+        <img alt="boot-svg" className="dark:invert-[1]" src="/icons/boot.svg"/>
+
+       
           AgentMatic
         </Link>
 

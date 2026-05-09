@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div className="flex h-[calc(100vh-56px)] w-full items-center  justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className=" h-full  w-full flex justify-center py-32 px-24 bg-white dark:bg-black ">
-        <div className="flex flex-col items-start gap-8">
-          <div className="flex flex-col  gap-8 items-start">
+        <div className="flex flex-col h-full items-start gap-8">
+          <div className="flex flex-col h-full  gap-8 items-start">
             <div>
               <Badge variant={"outline"}>
                 {" "}
@@ -51,8 +51,13 @@ export default function Home() {
             </Button>
           </div>
         </div>
-
-        <SwitchChoiceCard />
+<div className=" h-full flex items-center
+">
+  <img src="./icons/clock.svg" className="dark:invert-[1] size-[600px]" alt="" />
+</div>
+      
+         {/* <SwitchChoiceCard /> */}
+      
       </main>
     </div>
   );
