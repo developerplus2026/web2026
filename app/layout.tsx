@@ -17,6 +17,9 @@ import {
 import { ThemeProvider } from "@/components/theme-provider";
 import { NavigationMenuBar } from "@/components/navigation_menu_bar";
 import { GoeyToaster } from "@/components/ui/goey-toaster";
+import { GridPattern } from "@/components/ui/grid-pattern";
+import { cn } from "@/lib/utils";
+import { HexagonBackground } from "@/components/animate-ui/components/backgrounds/hexagon";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,7 +52,7 @@ export default function RootLayout({
   return (
     <>
       <html
-        className={`${geistSans.variable} ${instrumentSans.variable} ${instrumentSerif.variable} ${GeistPixelLine.variable} ${GeistPixelTriangle.variable} ${GeistPixelCircle.variable} ${GeistPixelGrid.variable} ${GeistPixelSquare.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${instrumentSans.variable} ${instrumentSerif.variable} ${GeistPixelLine.variable} ${GeistPixelTriangle.variable} ${GeistPixelCircle.variable} ${GeistPixelGrid.variable} ${GeistPixelSquare.variable} ${geistMono.variable} relative antialiased`}
         lang="en"
         suppressHydrationWarning
       >
@@ -61,6 +64,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            {" "}
             <NavigationMenuBar />
             <GoeyToaster position="top-center" theme="dark" />
             <TooltipProvider>{children}</TooltipProvider>
