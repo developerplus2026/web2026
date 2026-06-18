@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="flex z-40 h-[calc(100vh-56px)] w-full items-center  justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className=" h-full z-40  w-full flex justify-center py-32 px-24 bg-white dark:bg-black ">
-        <HexagonBackground className="absolute inset-0  flex items-center justify-center rounded-xl" />
+        {/* <HexagonBackground className="absolute inset-0  flex items-center justify-center rounded-xl" /> */}
         <div className="flex flex-col h-full items-start gap-8">
           <div className="flex flex-col h-full  gap-8 items-start">
             <div>
