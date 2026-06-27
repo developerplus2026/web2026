@@ -78,12 +78,12 @@ export default function Home() {
           className=" h-full  flex items-center
 "
         >
-          <DotmCircular5 size={32 * 7} dotSize={4 * 7} speed={1.2} bloom />
-          {/* <img
+          {/* <DotmCircular5 size={32 * 7} dotSize={4 * 7} speed={1.2} bloom /> */}
+          <img
             src="./icons/clock.svg"
-            className="dark:invert-[1] size-[600px]"
+            className="dark:invert-[1] size-150"
             alt=""
-          /> */}
+          />
           {/* <LineChart data={chartData}>
   <Grid horizontal />
   <Line dataKey="desktop" strokeWidth={2} />
