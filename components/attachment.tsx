@@ -11,6 +11,8 @@ import {
   AttachmentTitle,
 } from "@/components/ui/attachment";
 import { Spinner } from "@/components/ui/spinner";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { FileCode, X } from "@hugeicons/core-free-icons";
 
 const images = [
   {
@@ -59,13 +61,13 @@ export function AttachmentUI() {
         </AttachmentContent>
         <AttachmentActions>
           <AttachmentAction aria-label="Cancel upload">
-            <XIcon />
+            <HugeiconsIcon icon={X} size={"30"} strokeWidth={2} />
           </AttachmentAction>
         </AttachmentActions>
       </Attachment>
       <Attachment className="w-full">
         <AttachmentMedia>
-          <FileCodeIcon />
+          <HugeiconsIcon icon={FileCode} size={"30"} strokeWidth={2} />
         </AttachmentMedia>
         <AttachmentContent>
           <AttachmentTitle>message-renderer.tsx</AttachmentTitle>
@@ -73,13 +75,13 @@ export function AttachmentUI() {
         </AttachmentContent>
         <AttachmentActions>
           <AttachmentAction aria-label="Remove message-renderer.tsx">
-            <XIcon />
+            <HugeiconsIcon icon={X} size={"30"} strokeWidth={2} />
           </AttachmentAction>
         </AttachmentActions>
       </Attachment>
       <Attachment className="w-full">
         <AttachmentMedia>
-          <FileCodeIcon />
+          <HugeiconsIcon icon={FileCode} size={"30"} strokeWidth={2} />
         </AttachmentMedia>
         <AttachmentContent>
           <AttachmentTitle>message-renderer.tsx</AttachmentTitle>
@@ -87,13 +89,13 @@ export function AttachmentUI() {
         </AttachmentContent>
         <AttachmentActions>
           <AttachmentAction aria-label="Remove message-renderer.tsx">
-            <XIcon />
+            <HugeiconsIcon icon={X} size={"30"} strokeWidth={2} />
           </AttachmentAction>
         </AttachmentActions>
       </Attachment>
       <Attachment className="w-full">
         <AttachmentMedia>
-          <FileCodeIcon />
+          <HugeiconsIcon icon={FileCode} size={"30"} strokeWidth={2} />
         </AttachmentMedia>
         <AttachmentContent>
           <AttachmentTitle>message-renderer.tsx</AttachmentTitle>
@@ -101,7 +103,7 @@ export function AttachmentUI() {
         </AttachmentContent>
         <AttachmentActions>
           <AttachmentAction aria-label="Remove message-renderer.tsx">
-            <XIcon />
+            <HugeiconsIcon icon={X} size={"30"} strokeWidth={2} />
           </AttachmentAction>
         </AttachmentActions>
       </Attachment>
