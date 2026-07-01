@@ -77,6 +77,34 @@ export function AttachmentUI() {
           </AttachmentAction>
         </AttachmentActions>
       </Attachment>
+      <Attachment className="w-full">
+        <AttachmentMedia>
+          <FileCodeIcon />
+        </AttachmentMedia>
+        <AttachmentContent>
+          <AttachmentTitle>message-renderer.tsx</AttachmentTitle>
+          <AttachmentDescription>TypeScript · 12 KB</AttachmentDescription>
+        </AttachmentContent>
+        <AttachmentActions>
+          <AttachmentAction aria-label="Remove message-renderer.tsx">
+            <XIcon />
+          </AttachmentAction>
+        </AttachmentActions>
+      </Attachment>
+      <Attachment className="w-full">
+        <AttachmentMedia>
+          <FileCodeIcon />
+        </AttachmentMedia>
+        <AttachmentContent>
+          <AttachmentTitle>message-renderer.tsx</AttachmentTitle>
+          <AttachmentDescription>TypeScript · 12 KB</AttachmentDescription>
+        </AttachmentContent>
+        <AttachmentActions>
+          <AttachmentAction aria-label="Remove message-renderer.tsx">
+            <XIcon />
+          </AttachmentAction>
+        </AttachmentActions>
+      </Attachment>
     </div>
   );
 }
