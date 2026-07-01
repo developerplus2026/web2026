@@ -54,7 +54,7 @@ export function AttachmentUI() {
       </AttachmentGroup>
       <Attachment state="uploading" className="w-full">
         <AttachmentMedia>
-          <DotmHex1 dotSize={3} cellPadding={2} boxSize={64} minSize={48} />
+          <DotmHex1 dotSize={3} cellPadding={2} boxSize={20} minSize={20} />
         </AttachmentMedia>
         <AttachmentContent>
           <AttachmentTitle>sales-dashboard.pdf</AttachmentTitle>
