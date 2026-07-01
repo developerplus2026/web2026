@@ -13,8 +13,13 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { Button } from "./ui/button";
+
 import { HugeiconsIcon } from "@hugeicons/react";
-import { CircleArrowRight01Icon } from "@hugeicons/core-free-icons";
+import {
+  ArrowRight,
+  CircleArrowRight01Icon,
+  Globe02Icon,
+} from "@hugeicons/core-free-icons";
 import Image from "next/image";
 
 const components: { title: string; href: string; description: string }[] = [
@@ -146,27 +151,11 @@ export function NavigationMenuBar() {
         <div className="flex gap-4 items-center">
           <Button size={"sm"} variant="outline">
             Sign Up
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              fill="#ffffff"
-              viewBox="0 0 256 256"
-            >
-              <path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm32.49-92.49a12,12,0,0,1,0,17l-40,40a12,12,0,0,1-17-17L135,128,103.51,96.49a12,12,0,0,1,17-17Z"></path>
-            </svg>
+            <HugeiconsIcon icon={ArrowRight} size={"30"} strokeWidth={2} />
           </Button>
           <Button size={"sm"} variant="outline">
             Contact Sale
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              fill="#ffffff"
-              viewBox="0 0 256 256"
-            >
-              <path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm83.13,96H179.56a144.3,144.3,0,0,0-21.35-66.36A84.22,84.22,0,0,1,211.13,116ZM128,207c-9.36-10.81-24.46-33.13-27.45-67h54.94a119.74,119.74,0,0,1-17.11,52.77A108.61,108.61,0,0,1,128,207Zm-27.45-91a119.74,119.74,0,0,1,17.11-52.77A108.61,108.61,0,0,1,128,49c9.36,10.81,24.46,33.13,27.45,67ZM97.79,49.64A144.3,144.3,0,0,0,76.44,116H44.87A84.22,84.22,0,0,1,97.79,49.64ZM44.87,140H76.44a144.3,144.3,0,0,0,21.35,66.36A84.22,84.22,0,0,1,44.87,140Zm113.34,66.36A144.3,144.3,0,0,0,179.56,140h31.57A84.22,84.22,0,0,1,158.21,206.36Z"></path>
-            </svg>
+            <HugeiconsIcon icon={Globe02Icon} size={"30"} strokeWidth={2} />
           </Button>
         </div>
       </div>
