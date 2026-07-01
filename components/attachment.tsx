@@ -56,11 +56,11 @@ export function AttachmentUI() {
           </Attachment>
         ))}
       </AttachmentGroup>
-      <Attachment state="uploading" className="w-full">
+      <Attachment state="uploading" className="w-full bg-black border-input">
         <AttachmentMedia className="bg-black">
           <DotmHex1 dotSize={3} cellPadding={2} boxSize={20} minSize={20} />
         </AttachmentMedia>
-        <AttachmentContent className="bg-black border-input">
+        <AttachmentContent>
           <AttachmentTitle>sales-dashboard.pdf</AttachmentTitle>
           <AttachmentDescription>Uploading · 64%</AttachmentDescription>
         </AttachmentContent>
@@ -70,11 +70,11 @@ export function AttachmentUI() {
           </AttachmentAction>
         </AttachmentActions>
       </Attachment>
-      <Attachment className="w-full">
+      <Attachment state="uploading" className="w-full bg-black border-input">
         <AttachmentMedia className="bg-black">
           <HugeiconsIcon icon={FileCode} size={"30"} strokeWidth={2} />
         </AttachmentMedia>
-        <AttachmentContent className="bg-black border-input">
+        <AttachmentContent>
           <AttachmentTitle>message-renderer.tsx</AttachmentTitle>
           <AttachmentDescription>TypeScript · 12 KB</AttachmentDescription>
         </AttachmentContent>
@@ -84,11 +84,11 @@ export function AttachmentUI() {
           </AttachmentAction>
         </AttachmentActions>
       </Attachment>
-      <Attachment className="w-full">
+      <Attachment state="uploading" className="w-full bg-black border-input">
         <AttachmentMedia className="bg-black">
           <HugeiconsIcon icon={FileCode} size={"30"} strokeWidth={2} />
         </AttachmentMedia>
-        <AttachmentContent className="bg-black border-input">
+        <AttachmentContent>
           <AttachmentTitle>message-renderer.tsx</AttachmentTitle>
           <AttachmentDescription>TypeScript · 12 KB</AttachmentDescription>
         </AttachmentContent>
@@ -98,11 +98,11 @@ export function AttachmentUI() {
           </AttachmentAction>
         </AttachmentActions>
       </Attachment>
-      <Attachment className="w-full">
+      <Attachment state="uploading" className="w-full bg-black border-input">
         <AttachmentMedia className="bg-black">
           <HugeiconsIcon icon={FileCode} size={"30"} strokeWidth={2} />
         </AttachmentMedia>
-        <AttachmentContent className="bg-black border-input">
+        <AttachmentContent>
           <AttachmentTitle>message-renderer.tsx</AttachmentTitle>
           <AttachmentDescription>TypeScript · 12 KB</AttachmentDescription>
         </AttachmentContent>
