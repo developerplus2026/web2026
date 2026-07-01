@@ -41,7 +41,11 @@ export function AttachmentUI() {
     <div className="mx-auto flex w-full max-w-sm flex-col gap-3 py-12">
       <AttachmentGroup>
         {images.map((image) => (
-          <Attachment key={image.name} orientation="vertical">
+          <Attachment
+            className="bg-black border-input"
+            key={image.name}
+            orientation="vertical"
+          >
             <AttachmentMedia variant="image">
               <img src={image.src} alt={image.alt} />
             </AttachmentMedia>
@@ -53,10 +57,10 @@ export function AttachmentUI() {
         ))}
       </AttachmentGroup>
       <Attachment state="uploading" className="w-full">
-        <AttachmentMedia>
+        <AttachmentMedia className="bg-black">
           <DotmHex1 dotSize={3} cellPadding={2} boxSize={20} minSize={20} />
         </AttachmentMedia>
-        <AttachmentContent>
+        <AttachmentContent className="bg-black border-input">
           <AttachmentTitle>sales-dashboard.pdf</AttachmentTitle>
           <AttachmentDescription>Uploading · 64%</AttachmentDescription>
         </AttachmentContent>
@@ -67,10 +71,10 @@ export function AttachmentUI() {
         </AttachmentActions>
       </Attachment>
       <Attachment className="w-full">
-        <AttachmentMedia>
+        <AttachmentMedia className="bg-black">
           <HugeiconsIcon icon={FileCode} size={"30"} strokeWidth={2} />
         </AttachmentMedia>
-        <AttachmentContent>
+        <AttachmentContent className="bg-black border-input">
           <AttachmentTitle>message-renderer.tsx</AttachmentTitle>
           <AttachmentDescription>TypeScript · 12 KB</AttachmentDescription>
         </AttachmentContent>
@@ -81,10 +85,10 @@ export function AttachmentUI() {
         </AttachmentActions>
       </Attachment>
       <Attachment className="w-full">
-        <AttachmentMedia>
+        <AttachmentMedia className="bg-black">
           <HugeiconsIcon icon={FileCode} size={"30"} strokeWidth={2} />
         </AttachmentMedia>
-        <AttachmentContent>
+        <AttachmentContent className="bg-black border-input">
           <AttachmentTitle>message-renderer.tsx</AttachmentTitle>
           <AttachmentDescription>TypeScript · 12 KB</AttachmentDescription>
         </AttachmentContent>
@@ -95,10 +99,10 @@ export function AttachmentUI() {
         </AttachmentActions>
       </Attachment>
       <Attachment className="w-full">
-        <AttachmentMedia>
+        <AttachmentMedia className="bg-black">
           <HugeiconsIcon icon={FileCode} size={"30"} strokeWidth={2} />
         </AttachmentMedia>
-        <AttachmentContent>
+        <AttachmentContent className="bg-black border-input">
           <AttachmentTitle>message-renderer.tsx</AttachmentTitle>
           <AttachmentDescription>TypeScript · 12 KB</AttachmentDescription>
         </AttachmentContent>
