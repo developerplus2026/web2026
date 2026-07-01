@@ -57,7 +57,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuBar() {
   return (
-    <div className="fixed border-b  border-input z-60 w-full top-8 ">
+    <div className="fixed border-b  border-input px-8 z-60 w-full top-8 ">
       <div className="  justify-between flex   items-center  h-14">
         <Link
           href="/"
