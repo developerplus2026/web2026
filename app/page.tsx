@@ -17,6 +17,7 @@ import { DotmCircular5 } from "@/components/ui/dotm-circular-5";
 import { GridPattern } from "@/components/ui/grid-pattern";
 import { cn } from "@/lib/utils";
 import { HexagonBackground } from "@/components/animate-ui/components/backgrounds/hexagon";
+import { AttachmentUI } from "@/components/attachment";
 // import { AreaChart, Area, Grid, XAxis, ChartTooltip ,Line } from "@bklitui/ui/charts";
 export default function Home() {
   return (
@@ -64,12 +65,9 @@ export default function Home() {
           className=" h-full  flex items-center
 "
         >
+          <AttachmentUI />
           {/* <DotmCircular5 size={32 * 7} dotSize={4 * 7} speed={1.2} bloom /> */}
-          <img
-            src="./icons/clock.svg"
-            className="dark:invert-[1] size-150"
-            alt=""
-          />
+
           {/* <LineChart data={chartData}>
   <Grid horizontal />
   <Line dataKey="desktop" strokeWidth={2} />
