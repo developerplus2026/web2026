@@ -57,8 +57,8 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuBar() {
   return (
-    <div className="fixed z-60 w-full top-8 px-16">
-      <div className="border  border-input rounded-3xl justify-between flex   items-center px-12 h-14">
+    <div className="fixed border-b  border-input z-60 w-full top-8 ">
+      <div className="  justify-between flex   items-center  h-14">
         <Link
           href="/"
           className="instrument-serif-regular gap-3 flex items-center text-2xl!"
@@ -123,6 +123,22 @@ export function NavigationMenuBar() {
                 className={navigationMenuTriggerStyle()}
               >
                 <Link href="/docs">Pricing</Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink
+                asChild
+                className={navigationMenuTriggerStyle()}
+              >
+                <Link href="/docs">Support</Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink
+                asChild
+                className={navigationMenuTriggerStyle()}
+              >
+                <Link href="/docs">Download</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
           </NavigationMenuList>
