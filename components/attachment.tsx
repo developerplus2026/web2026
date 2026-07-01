@@ -13,6 +13,7 @@ import {
 import { Spinner } from "@/components/ui/spinner";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { FileCode, X } from "@hugeicons/core-free-icons";
+import { DotmHex1 } from "./ui/dotm-hex-1";
 
 const images = [
   {
@@ -53,7 +54,7 @@ export function AttachmentUI() {
       </AttachmentGroup>
       <Attachment state="uploading" className="w-full">
         <AttachmentMedia>
-          <Spinner />
+          <DotmHex1 dotSize={3} cellPadding={2} boxSize={64} minSize={48} />
         </AttachmentMedia>
         <AttachmentContent>
           <AttachmentTitle>sales-dashboard.pdf</AttachmentTitle>
