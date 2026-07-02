@@ -11,6 +11,7 @@ import {
   Download02FreeIcons,
   Globe02Icon,
 } from "@hugeicons/core-free-icons";
+import { StaticRadialGradient } from "@paper-design/shaders-react";
 import { SwitchChoiceCard } from "@/components/switch_group";
 import { DotmTriangle2 } from "@/components/ui/dotm-triangle-2";
 import { DotmCircular5 } from "@/components/ui/dotm-circular-5";
@@ -72,7 +73,23 @@ export default function Home() {
           className=" h-full  flex items-center
 "
         >
-          <AttachmentUI />
+          {/* <AttachmentUI /> */}
+          <StaticRadialGradient
+            width={1280}
+            height={720}
+            colors={["#00bbff", "#00ffe1", "#ffffff"]}
+            colorBack="#000000"
+            radius={0.8}
+            focalDistance={0.99}
+            focalAngle={0}
+            falloff={0.24}
+            mixing={0.5}
+            distortion={0}
+            distortionShift={0}
+            distortionFreq={12}
+            grainMixer={0}
+            grainOverlay={0}
+          />
           {/* <DotmCircular5 size={32 * 7} dotSize={4 * 7} speed={1.2} bloom /> */}
         </div>
 
