@@ -1,6 +1,6 @@
 // Transitions.dev — Page side-by-side (React, self-contained)
 // Drop into any React project — no extra CSS file needed.
-
+"use client";
 import { useState } from "react";
 
 // ── Styles ──────────────────────────────────────────────
