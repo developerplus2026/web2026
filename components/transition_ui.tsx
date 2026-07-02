@@ -2,6 +2,8 @@
 // Drop into any React project — no extra CSS file needed.
 "use client";
 import { useState } from "react";
+import { BubbleFirst } from "./bubble_ui_first";
+import { BubbleSecond } from "./bubble_ui_second";
 
 // ── Styles ──────────────────────────────────────────────
 // Auto-injected on first import. Idempotent (guarded by
@@ -70,13 +72,13 @@ export function PageSlide() {
   return (
     <div className="t-page-slide" data-page={page}>
       <section className="t-page" data-page-id="1">
-        <h2>Page 1</h2>
+        <BubbleFirst />
         <button type="button" onClick={() => setPage(2)}>
           Next
         </button>
       </section>
       <section className="t-page" data-page-id="2">
-        <h2>Page 2</h2>
+        <BubbleSecond />
         <button type="button" onClick={() => setPage(1)}>
           Back
         </button>
