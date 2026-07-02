@@ -70,7 +70,7 @@ export function PageSlide() {
   const [page, setPage] = useState(1);
 
   return (
-    <div className="t-page-slide" data-page={page}>
+    <div className="t-page-slide h-100" data-page={page}>
       <section className="t-page" data-page-id="1">
         <BubbleFirst />
         <button type="button" onClick={() => setPage(2)}>
