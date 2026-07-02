@@ -14,7 +14,7 @@ export const PlayerUI = ({ src }: PlayerProps) => {
   return (
     <Player.Provider>
       <VideoSkin>
-        <Video autoPlay className="w-175" src={src} playsInline />
+        <Video autoPlay className="w-175" loop src={src} playsInline />
       </VideoSkin>
     </Player.Provider>
   );
