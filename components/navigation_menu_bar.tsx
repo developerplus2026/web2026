@@ -79,27 +79,27 @@ export function NavigationMenuBar() {
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+              <NavigationMenuTrigger>Products</NavigationMenuTrigger>
 
               <NavigationMenuContent>
                 <ul className="w-96">
-                  <ListItem href="/docs" title="Introduction">
-                    Re-usable components built with Tailwind CSS.
+                  <ListItem href="/math" title="Math">
+                   Learning lessons from teacher Do Van Duc
                   </ListItem>
-                  <ListItem href="/docs/installation" title="Installation">
-                    How to install dependencies and structure your app.
+                  <ListItem href="/physics" title="Physics">
+                    Learning lessons from teacher Vu Ngoc Anh
                   </ListItem>
                   <ListItem
-                    href="/docs/primitives/typography"
-                    title="Typography"
+                    href="/chemistry"
+                    title="Chemistry"
                   >
-                    Styles for headings, paragraphs, lists...etc
+                   Learning lessons from teacher Pham Van Trong
                   </ListItem>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem className="hidden md:flex">
-              <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+              <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-100 gap-2 md:w-125 md:grid-cols-2 lg:w-150">
                   {components.map((component) => (
