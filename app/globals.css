@@ -187,5 +187,5 @@
   font-style: italic;
 }
 .media-default-skin {
-  width: 700px;
+  width: 700px !important;
 }
