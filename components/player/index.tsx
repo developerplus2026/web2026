@@ -13,7 +13,7 @@ interface PlayerProps {
 export const PlayerUI = ({ src }: PlayerProps) => {
   return (
     <Player.Provider>
-      <VideoSkin>
+      <VideoSkin className="w-175">
         <Video src={src} playsInline />
       </VideoSkin>
     </Player.Provider>
