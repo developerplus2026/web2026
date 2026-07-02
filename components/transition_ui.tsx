@@ -71,13 +71,13 @@ export function PageSlide() {
 
   return (
     <div className="t-page-slide " data-page={page}>
-      <section className="t-page" data-page-id="1">
+      <section className="t-page w-100" data-page-id="1">
         <BubbleFirst />
         <button type="button" onClick={() => setPage(2)}>
           Next
         </button>
       </section>
-      <section className="t-page" data-page-id="2">
+      <section className="t-page w-100" data-page-id="2">
         <BubbleSecond />
         <button type="button" onClick={() => setPage(1)}>
           Back

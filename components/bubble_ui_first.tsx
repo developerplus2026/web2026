@@ -7,7 +7,7 @@ import {
 
 export function BubbleFirst() {
   return (
-    <div className="flex w-full h-100 max-w-sm flex-col gap-8 py-12">
+    <div className="flex w-full  max-w-sm flex-col gap-8 py-12">
       <Bubble align="end">
         <BubbleContent>Hey there! what&apos;s up?</BubbleContent>
       </Bubble>

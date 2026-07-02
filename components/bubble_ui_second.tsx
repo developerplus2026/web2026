@@ -2,7 +2,7 @@ import { Bubble, BubbleContent, BubbleReactions } from "@/components/ui/bubble";
 
 export function BubbleSecond() {
   return (
-    <div className="flex w-full h-100 max-w-sm flex-col gap-12 py-12">
+    <div className="flex w-full max-w-sm flex-col gap-12 py-12">
       <Bubble>
         <BubbleContent>This is the default primary bubble.</BubbleContent>
       </Bubble>
