@@ -79,7 +79,7 @@ export function NavigationMenuBar() {
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+              <NavigationMenuTrigger>Products</NavigationMenuTrigger>
 
               <NavigationMenuContent>
                 <ul className="w-96">
@@ -99,7 +99,7 @@ export function NavigationMenuBar() {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem className="hidden md:flex">
-              <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+              <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-100 gap-2 md:w-125 md:grid-cols-2 lg:w-150">
                   {components.map((component) => (
