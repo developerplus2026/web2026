@@ -75,7 +75,7 @@ export default function Home() {
         >
           {/* <AttachmentUI /> */}
           <StaticRadialGradient
-            width={1280}
+            width={400}
             height={720}
             colors={["#00bbff", "#00ffe1", "#ffffff"]}
             colorBack="#000000"
