@@ -44,14 +44,18 @@ export default function Home() {
             </p>
           </div>
           <div className="flex z-40 gap-4 items-center">
-            <Button size={"lg"} className="rounded-full" variant="outline">
-              Getting Started{" "}
-              <HugeiconsIcon icon={ArrowRight} size={"30"} strokeWidth={2} />
-            </Button>
-            <Button size={"lg"} className="rounded-full" variant="outline">
-              Contact Sale
-              <HugeiconsIcon icon={Globe02Icon} size={"30"} strokeWidth={2} />
-            </Button>
+            <MetalFx preset="gold">
+              <Button size={"lg"} className="rounded-full" variant="outline">
+                Getting Started{" "}
+                <HugeiconsIcon icon={ArrowRight} size={"30"} strokeWidth={2} />
+              </Button>
+            </MetalFx>
+            <MetalFx preset="gold">
+              <Button size={"lg"} className="rounded-full" variant="outline">
+                Contact Sale
+                <HugeiconsIcon icon={Globe02Icon} size={"30"} strokeWidth={2} />
+              </Button>
+            </MetalFx>
             <MetalFx preset="gold">
               <Button size={"lg"} className="rounded-full" variant="outline">
                 Download For MacOS
