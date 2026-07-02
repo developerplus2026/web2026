@@ -18,6 +18,7 @@ import { GridPattern } from "@/components/ui/grid-pattern";
 import { cn } from "@/lib/utils";
 import { HexagonBackground } from "@/components/animate-ui/components/backgrounds/hexagon";
 import { AttachmentUI } from "@/components/attachment";
+import { MetalFx } from "metal-fx";
 // import { AreaChart, Area, Grid, XAxis, ChartTooltip ,Line } from "@bklitui/ui/charts";
 export default function Home() {
   return (
@@ -51,14 +52,16 @@ export default function Home() {
               Contact Sale
               <HugeiconsIcon icon={Globe02Icon} size={"30"} strokeWidth={2} />
             </Button>
-            <Button size={"lg"} className="rounded-full" variant="outline">
-              Download For MacOS
-              <HugeiconsIcon
-                icon={Download02FreeIcons}
-                size={"30"}
-                strokeWidth={2}
-              />
-            </Button>
+            <MetalFx preset="gold">
+              <Button size={"lg"} className="rounded-full" variant="outline">
+                Download For MacOS
+                <HugeiconsIcon
+                  icon={Download02FreeIcons}
+                  size={"30"}
+                  strokeWidth={2}
+                />
+              </Button>
+            </MetalFx>
           </div>
         </div>
         <div
@@ -67,13 +70,6 @@ export default function Home() {
         >
           <AttachmentUI />
           {/* <DotmCircular5 size={32 * 7} dotSize={4 * 7} speed={1.2} bloom /> */}
-
-          {/* <LineChart data={chartData}>
-  <Grid horizontal />
-  <Line dataKey="desktop" strokeWidth={2} />
-  <XAxis />
-  <ChartTooltip />
-</LineChart> */}
         </div>
 
         {/* <SwitchChoiceCard /> */}
