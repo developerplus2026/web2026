@@ -16,6 +16,7 @@
     "@number-flow/react": "^0.6.0",
     "@solar-icons/react": "^1.1.0",
     "@toolwind/corner-shape": "0.0.8-3",
+    "@videojs/react": "10.0.0-beta.24",
     "@visx/curve": "4.0.1-alpha.0",
     "@visx/event": "4.0.1-alpha.0",
     "@visx/gradient": "4.0.1-alpha.0",
