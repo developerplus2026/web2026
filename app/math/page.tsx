@@ -3,8 +3,8 @@ import { PlayerUI } from "@/components/player";
 export default function HomePage() {
   return (
     <div className="pt-38 w-full flex flex-col justify-center items-center  ">
-      <PlayerUI src="https://vercel-player-six.vercel.app/play?v=019f453bd02d7ed8832017c94caa5a91&k=2026%2F03%2F11%2Fresources%2Fvideo%2Fph_n_1.1___l__thuy_t_v__d____t1_a1_1773199405700623643215.mp4" />
-      <PlayerUI src="https://vercel-player-six.vercel.app/play?v=019f453bd06c7f37812a2f3fc980f984&k=2026%2F03%2F21%2Fresources%2Fvideo%2Fph_n_1___l__thuy_t___t1_a2_1774111110884474495754.mp4" />
+      <PlayerUI src="https://vp.tenschool.vn/api/stream/2026/03/11/resources/video/ph_n_1.1___l__thuy_t_v__d____t1_a1_1773199405700623643215_hls/master.m3u8?token=v2.eyJwIjoiMjAyNi8wMy8xMS9yZXNvdXJjZXMvdmlkZW8vcGhfbl8xLjFfX19sX190aHV5X3Rfdl9fZF9fX190MV9hMV8xNzczMTk5NDA1NzAwNjIzNjQzMjE1X2hscy8iLCJleHAiOjE3ODY3NjE0NTUsIm4iOiJ1Q2szNFJ1RHF2ZlVjbUt0In0.pM-OFa_aWc7o91Is_Hp6ISmQ85DN1WZObX9q-rQZXVG4g8djOw1pW85GGI30R-t36e4OghG-OAT-Xh0gBPIKAg" />
+      <PlayerUI src="https://vp.tenschool.vn/api/stream/2026/03/21/resources/video/ph_n_1___l__thuy_t___t1_a2_1774111110884474495754_hls/master.m3u8?token=v2.eyJwIjoiMjAyNi8wMy8yMS9yZXNvdXJjZXMvdmlkZW8vcGhfbl8xX19fbF9fdGh1eV90X19fdDFfYTJfMTc3NDExMTExMDg4NDQ3NDQ5NTc1NF9obHMvIiwiZXhwIjoxNzg2ODM3NDE1LCJuIjoiQlJhbGFDRS1iZ3Q1QlFjTyJ9.ESzBrY9h5hxQPxufiLTwVrkSTfGcdFt4WO_dsSRs0TIN-yZT7_LWBQo619i0vpdp_PnQQWX1KjCPefxs4IZ2BA" />
     </div>
   );
 }
